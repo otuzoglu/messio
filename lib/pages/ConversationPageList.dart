@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'ConversationPage.dart';
 
 class ConversationPageList extends StatefulWidget {
-  ConversationPageList({Key key}) : super(key: key);
-
   @override
   _ConversationPageListState createState() => _ConversationPageListState();
+  ConversationPageList();
 }
 
 class _ConversationPageListState extends State<ConversationPageList> {
