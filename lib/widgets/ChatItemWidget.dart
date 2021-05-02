@@ -3,7 +3,7 @@ import 'package:messio/config/Palette.dart';
 import 'package:intl/intl.dart';
 
 class ChatItemWidget extends StatelessWidget {
-  var index;
+  final int index;
 
   ChatItemWidget(this.index);
 
@@ -11,9 +11,9 @@ class ChatItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     if (index % 2 == 0) {
       return Container(
-          child: Column(children: <Widget>[
+          child: Column(children: [
         Row(
-          children: <Widget>[
+          children: [
             Container(
               child: Text(
                 'This is a sent message',
@@ -30,7 +30,7 @@ class ChatItemWidget extends StatelessWidget {
           ],
           mainAxisAlignment: MainAxisAlignment.end,
         ),
-        Row(mainAxisAlignment: MainAxisAlignment.end, children: <Widget>[
+        Row(mainAxisAlignment: MainAxisAlignment.end, children: [
           Container(
             child: Text(
               DateFormat('dd MMM kk:mm')
@@ -47,9 +47,9 @@ class ChatItemWidget extends StatelessWidget {
     } else {
       return Container(
         child: Column(
-          children: <Widget>[
+          children: [
             Row(
-              children: <Widget>[
+              children: [
                 Container(
                   child: Text(
                     'This is a received message',

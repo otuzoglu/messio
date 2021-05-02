@@ -9,15 +9,13 @@ class InputWidget extends StatelessWidget {
     return Container(
       child: Row(
         children: [
-          Material(
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 1.0),
-              child: IconButton(
-                icon: Icon(Icons.face),
-                color: Palette.primaryColor,
-              ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 1.0),
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.face),
+              color: Palette.primaryColor,
             ),
-            color: Colors.white,
           ),
           Flexible(
             child: Container(
