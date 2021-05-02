@@ -9,6 +9,7 @@ void main() {
     ),
   );
   testWidgets('InputWidget UI Test', (WidgetTester tester) async {
+    await tester.pumpWidget(app);
     expect(find.byType(IconButton), findsNWidgets(2));
     expect(find.byType(EditableText), findsOneWidget);
   });
