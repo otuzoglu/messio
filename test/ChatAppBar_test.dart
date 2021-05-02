@@ -11,7 +11,7 @@ void main() {
   testWidgets('ChatAppBar UI Test', (WidgetTester tester) async {
     await tester.pumpWidget(app);
 
-    expect(find.text('Alper OTUZOĞLU'), findsOneWidget);
+    expect(find.text('Alper'), findsOneWidget);
     expect(find.text('@infelix'), findsOneWidget);
     expect(find.byType(IconButton), findsNWidgets(1));
     expect(find.byType(CircleAvatar), findsOneWidget);
