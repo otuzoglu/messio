@@ -8,6 +8,12 @@
             "name": "messio",
             "request": "launch",
             "type": "dart"
-        }
+        },
+        {
+            "name": "Android",
+            "request": "launch",
+            "type": "dart",
+            "deviceId": "emulator-5554"
+        },
     ]
 }
